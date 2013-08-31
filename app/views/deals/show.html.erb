@@ -1,28 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
-  <%= @deal.name %>
+  <b>
+  	<%= best_in_place @deal, :name %>
+	</b>
 </p>
 
 <ul>
 <% @deal.phases.each do | p | %>
 	<li>
-		<%= p.name %>
+		<%= best_in_place p, :name %>
 		<ul>
 			<% p.items.each do |i| %>
 				<li>
-					<%= i.name %>
+					<%= best_in_place i, :name %>
 				</li>
 			<% end %>
 		</ul>
 	</li>
 <% end %>
 </ul>
-
-<p>
-	<%= link_to 'Add phase', new_phase_path(deal_id: @deal)%>
-</p>
 
 <%= link_to 'Edit', edit_deal_path(@deal) %> |
 <%= link_to 'Back', deals_path %>
