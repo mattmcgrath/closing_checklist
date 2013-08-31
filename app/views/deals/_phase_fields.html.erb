@@ -1,0 +1,7 @@
+<%= f.label :name, "Phase:" %>
+<%= f.text_field :name %>
+<%= f.link_to_remove "Remove this phase"%>
+<%= f.fields_for :items %>
+<p>
+	<%=f.link_to_add "Add an item", :items %>
+</p>

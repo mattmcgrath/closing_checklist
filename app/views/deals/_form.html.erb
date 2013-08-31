@@ -17,13 +17,7 @@
   </div>
   
 
-	<%= f.fields_for :phases do |p| %>
-		<p>
-		<%= p.label :name, "Phase:" %>
-		<%= p.text_field :name %>
-		<%= p.link_to_remove "Remove this phase"%>
-		</p>
-	<% end %>
+	<%= f.fields_for :phases %>
 	
 	<p>
 		<%=f.link_to_add "Add a phase", :phases %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  phase_id: 1
+  name: MyString
+  due: 2013-08-30
+  done: false
+  owner_id: 1
+  party_id: 1
+  notes: MyText
+
+two:
+  phase_id: 1
+  name: MyString
+  due: 2013-08-30
+  done: false
+  owner_id: 1
+  party_id: 1
+  notes: MyText

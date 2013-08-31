@@ -7,7 +7,16 @@
 
 <ul>
 <% @deal.phases.each do | p | %>
-	<li><%= p.name %></li>
+	<li>
+		<%= p.name %>
+		<ul>
+			<% p.items.each do |i| %>
+				<li>
+					<%= i.name %>
+				</li>
+			<% end %>
+		</ul>
+	</li>
 <% end %>
 </ul>
 
