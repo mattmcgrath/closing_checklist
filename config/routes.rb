@@ -1,4 +1,10 @@
 ClosingChecklist::Application.routes.draw do
+  resources :phases
+
+
+  resources :deals
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

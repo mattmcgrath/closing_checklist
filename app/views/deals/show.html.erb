@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @deal.name %>
+</p>
+
+<ul>
+<% @deal.phases.each do | p | %>
+	<li><%= p.name %></li>
+<% end %>
+</ul>
+
+<p>
+	<%= link_to 'Add phase', new_phase_path(deal_id: @deal)%>
+</p>
+
+<%= link_to 'Edit', edit_deal_path(@deal) %> |
+<%= link_to 'Back', deals_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  deal_id: 1
+  position: 1
+  name: MyString
+
+two:
+  deal_id: 1
+  position: 1
+  name: MyString
